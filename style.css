@@ -106,6 +106,7 @@ input[type='number'] {
   box-shadow: var(--box-shadow);
   color: #fff;
   border: 0;
+  border-radius: 23px;
   display: block;
   font-size: 16px;
   margin: 10px 0 30px;
