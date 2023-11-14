@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
     <title>Expense Tracker</title>
   </head>
@@ -11,8 +10,8 @@
     <h2>Expense Tracker</h2>
 
     <div class="container">
-      <h4>Your Balance</h4>
-      <h1 id="balance">R0.00</h1>
+      <h4 class="h4-bal">Your Balance</h4>
+      <h1 id="balance" class="h1-bal">R0.00</h1>
 
       <div class="inc-exp-container">
         <div>
@@ -25,17 +24,14 @@
         </div>
       </div>
 
-      <h3>History</h3>
+      <h3>Latets transactions</h3>
       <ul id="list" class="list">
-        <!-- <li class="minus">
-          Cash <span>-$400</span><button class="delete-btn">x</button>
-        </li> -->
       </ul>
 
-      <h3>Add new transaction</h3>
+      <h3>Add new transaction below</h3>
       <form id="form">
         <div class="form-control">
-          <label for="text">Text</label>
+          <label for="text">Transaction Name</label>
           <input type="text" id="text" placeholder="Enter text..." />
         </div>
         <div class="form-control">
@@ -48,7 +44,12 @@
         <button class="btn">Add transaction</button>
       </form>
     </div>
-
+    <footer>
+      <p id="footer-text"></p>
+      <div class="footer-cred">
+        <a href="https://thilisadiki.dev/">Made by Jason Sadiki</a>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

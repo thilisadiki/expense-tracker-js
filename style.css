@@ -46,6 +46,7 @@ h3 {
   border-bottom: 1px solid #bbb;
   padding-bottom: 10px;
   margin: 40px 0 10px;
+  
 }
 
 h4 {
@@ -53,8 +54,18 @@ h4 {
   text-transform: uppercase;
 }
 
+.h4-bal {
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+.h1-bal {
+  letter-spacing: 3px;
+}
+
 .inc-exp-container {
   background-color: #fff;
+  border-radius: 64px 96px 128px 32px;
   box-shadow: var(--box-shadow);
   padding: 20px;
   display: flex;
@@ -129,6 +140,7 @@ input[type='number'] {
 .list li {
   background-color: #fff;
   box-shadow: var(--box-shadow);
+  border-radius: 32px 64px;
   color: #333;
   display: flex;
   justify-content: space-between;
@@ -138,11 +150,11 @@ input[type='number'] {
 }
 
 .list li.plus {
-  border-right: 5px solid #2ecc71;
+  border-bottom: 5px solid #2ecc71;
 }
 
 .list li.minus {
-  border-right: 5px solid #c0392b;
+  border-bottom: 5px solid #c0392b;
 }
 
 .delete-btn {
@@ -163,4 +175,26 @@ input[type='number'] {
 
 .list li:hover .delete-btn {
   opacity: 1;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+#footer-text {
+  font-size: 0.8em; 
+}
+
+.footer-cred a {
+  letter-spacing: 3px;
+  text-decoration:wavy underline;
+}
+
+.footer-cred a:hover {
+  text-decoration: underline;
 }

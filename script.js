@@ -49,7 +49,7 @@ function generateID() {
 // Add transactions to DOM list
 function addTransactionDOM(transaction) {
   // Get sign
-  const sign = transaction.amount < 0 ? '-' : '+';
+  const sign = transaction.amount < 0 ? '-' : '';
 
   const item = document.createElement('li');
 
@@ -113,3 +113,26 @@ function init() {
 init();
 
 form.addEventListener('submit', addTransaction);
+
+/**
+ * Updates the footer text with the current date and time.
+ */
+function updateFooter() {
+
+  const date = new Date();
+  
+  const day = date.getDate();
+  const month = date.getMonth() + 1; 
+  const year = date.getFullYear();
+
+  const time = date.toLocaleTimeString();
+
+  const footerText = `${day}/${month}/${year} - ${time} `;
+
+  document.getElementById("footer-text").textContent = footerText;
+ 
+
+}
+
+updateFooter(); // Initial call
+setInterval(updateFooter, 1000); // Update every second
