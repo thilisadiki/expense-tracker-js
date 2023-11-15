@@ -199,8 +199,6 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
- 
- 
   .container {
     width: 90%;
   }
@@ -240,15 +238,8 @@ footer {
   #footer-date {
     font-size: 1em;
   }
-
-  .footer-cred a {
-    font-size: 16px;
-    letter-spacing: 3px;
-    text-decoration:wavy underline;
+  .footer-cred a:hover {
+    text-decoration: none;
   }
 
-  .before {
-    
-  }
-  
 }
