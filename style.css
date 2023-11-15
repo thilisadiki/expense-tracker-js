@@ -34,7 +34,7 @@ body::before {
 
 .container {
   margin: 30px auto;
-  width: 400px;
+  width: 50%;
 }
 
 h1 {
@@ -104,7 +104,7 @@ label {
 input[type='text'],
 input[type='number'] {
   border: 1px solid #dedede;
-  border-radius: 2px;
+  border-radius: 32px;
   display: block;
   font-size: 16px;
   padding: 10px;
@@ -197,4 +197,42 @@ footer {
 
 .footer-cred a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  
+  .container {
+    width: 90%;
+  }
+  
+  .inc-exp-container {
+    flex-direction: column;
+  }
+  
+  .inc-exp-container > div {
+    margin: 10px 0;
+  }
+  
+  .inc-exp-container > div:first-of-type {
+    border-right: 0;
+    border-bottom: 1px solid #dedede;
+  }
+  
+  .list li {
+    flex-direction: column;
+  }
+  
+  .list li .delete-btn {
+    position: absolute;
+    transform: translate(0, -1);
+    opacity: 1;
+    margin-top: 10px;
+  }
+
+  input[type=text], input[type=number] {
+    padding: 1rem;
+  }
 }
