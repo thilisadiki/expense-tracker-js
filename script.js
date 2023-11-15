@@ -129,7 +129,7 @@ function updateFooter() {
 
   const footerText = `${day}/${month}/${year} - ${time} `;
 
-  document.getElementById("footer-text").textContent = footerText;
+  document.getElementById("footer-date").textContent = footerText;
  
 
 }

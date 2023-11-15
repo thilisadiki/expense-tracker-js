@@ -9,7 +9,6 @@
 }
 
 body {
-  /* background-color: #f7f7f7; */
   background-image: url(mon.jpeg);
   display: flex;
   flex-direction: column;
@@ -23,7 +22,7 @@ body {
 
 body::before {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -178,7 +177,7 @@ input[type='number'] {
 }
 
 footer {
-  
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
@@ -186,7 +185,7 @@ footer {
   text-align: center;
 }
 
-#footer-text {
+#footer-date {
   font-size: 0.8em; 
 }
 
@@ -200,10 +199,8 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  body {
-    font-size: 14px;
-  }
-  
+ 
+ 
   .container {
     width: 90%;
   }
@@ -235,4 +232,23 @@ footer {
   input[type=text], input[type=number] {
     padding: 1rem;
   }
+
+  footer {
+    padding: 5px;
+    position: relative;
+  }
+  #footer-date {
+    font-size: 1em;
+  }
+
+  .footer-cred a {
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-decoration:wavy underline;
+  }
+
+  .before {
+    
+  }
+  
 }
