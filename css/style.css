@@ -9,7 +9,7 @@
 }
 
 body {
-  background-image: url(mon.jpeg);
+  background-image: url(../img/mon.jpeg);
   display: flex;
   flex-direction: column;
   align-items: center;

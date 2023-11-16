@@ -1,6 +1,6 @@
 {
     "name": "Expensify",
-    "short_name": "Exp",
+    "short_name": "Expensify",
     "start_url": "/?home=true",
     "icons": [
         {
