@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json">
     <title>Expense Tracker</title>
   </head>
   <body>
@@ -24,7 +25,7 @@
         </div>
       </div>
 
-      <h3>Latets transactions</h3>
+      <h3>Latest transactions</h3>
       <ul id="list" class="list">
       </ul>
 
@@ -50,6 +51,12 @@
         <a href="https://thilisadiki.dev/">Made by Jason Sadiki</a>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js">
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js')
+        .then((reg) => console.log('service worker registered', reg))
+        .catch((err) => console.log('service worker not registered', err));
+      }
+    </script>
   </body>
 </html>
