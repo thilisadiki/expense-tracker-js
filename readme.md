@@ -9,6 +9,9 @@ This is a simple expense tracker application that allows users to:
 - View transaction history
 - Delete transactions
 - Persist transactions to localStorage
+- Works offline using a service worker
+- Installable to device home screen
+- Fast load times using cache
 
 ## Features
 
@@ -20,6 +23,12 @@ This is a simple expense tracker application that allows users to:
 - All transactions saved to localStorage
 - On reload, transactions are loaded from localStorage
 
+## New PWA Features
+- Service worker - caches assets for offline access
+- Web app manifest - enables install to homescreen
+- IndexedDB - handles data storage
+- Load fast on repeat visits with cache
+
 ## Usage
 
 To use the app:
@@ -29,7 +38,11 @@ To use the app:
 - Click 'Add Transaction' to add to list
 - Transactions are added to list, and totals updated
 - Click red 'X' to delete a transaction
-- Transactions persist when page is reloaded
+- Transactions persist when page is reloaded 
+- Load the app in a browser
+- Install to your device - add to home screen
+- Use the expenses app offline
+- Data is saved between sessions
 
 ## Code Overview
 
@@ -39,6 +52,8 @@ The project consists of:
 - `style.css` - CSS styles 
 - `script.js` - JavaScript logic
 - `transactions` - Array to store transactions
+- `manifest.json`
+- `service-worker.js`
 
 The `script.js` contains the following functions:
 
@@ -61,9 +76,18 @@ The `transactions` array stores each transaction object:
 
 Local storage is used to persist data between sessions.
 
+## Learnings
+- Building this web app I learned:
+
+- How to make a progressive web app
+- Using service workers for offline capability
+- Storing data in IndexedDB
+- Configuring a web app manifest
+- Debugging PWAs and service workers
+
 ## Future Improvements
 
-Some potential improvements:
+## Some potential improvements:
 
 - Better input validation and error handling
 - Categories for transactions
@@ -72,5 +96,5 @@ Some potential improvements:
 - Export transaction history
 
 ## Credits
-
-Code based on Brad Traversy's JavaScript Tutorial.
+- PWA functionality based on Google DevDocs.
+- Code based on Brad Traversy's JavaScript Tutorial.
